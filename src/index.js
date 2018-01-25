@@ -12,7 +12,6 @@ m.route(document.body, '/list', {
     },
     "/edit/:id": {
         render: (vnode) => {
-            debugger;
             return m(Layout, m(UserForm, vnode.attrs))
         }
     }
